@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Amor</title>
+    <link rel="stylesheet" href="style\styles.css">
+    <script defer src="js\script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Para Minha princesinha ❤️</h1>
+        
+        <!-- Carrossel -->
+        <div class="carousel">
+            <div class="slides">
+                <img src="img\img1.jpeg" alt="Nos dois">
+                <img src="img\img2.jpeg" alt="Momentos especiais">
+                <img src="img\img3.jpeg" alt="Mais um momento juntos">
+                <img src="img\img4.jpeg" alt="Nos dois">
+                <img src="img\img5.jpeg" alt="Momentos especiais">
+                <img src="img\img6.jpeg" alt="Mais um momento juntos">
+                <img src="img\img7.jpeg" alt="Nos dois">
+                <img src="img\img8.jpeg" alt="Momentos especiais">
+                <img src="img\img9.jpeg" alt="Mais um momento juntos">
+                <img src="img\img10.jpeg" alt="Momentos especiais">
+                <img src="img\img11.jpeg" alt="Mais um momento juntos">
+            </div>
+        </div>
+        
+        <!-- Texto personalizado -->
+        <div class="message">
+            <p>Bom... Estou meio nervoso aqui kkkk, pq é a primeira vez que amo alguém desse jeito, mas sem enrolação, 
+                enquanto eu fazia essa mini pagina, pensei bastante, sobre desde o dia em que eu te conheci, ate quando me apaixonei logo em seguida
+                e a gente conversando direto desde quando acordamos ate 1 ou 2 da manhã, e eu me apaixonei pelo seu jeito, pela forma que me olha, forma que me trata, o seu jeito engraçado, 
+                meigo, por tudo em você, e dessa forma você e encantou, e logo fiquei pensando em como seria viver com você...</p>
+                <brk>
+                <p>Ana, você abriu meu mundo de uma forma que nunca pensei ser possível, deixou tudo mais alegre, mais colorido, 
+                não tem mais um momento que eu não penso em você, quero te deixar feliz a todo momento, amo ver seu sorriso, amo seu cheiro, amo seu abraço, amo seu beijo, seus lábios são maravilhosos, 
+                amo o carinho que você me da, gosto tando quando você me abraça ou fica apertando meu braço kkkk. 
+                Amor, você é de longe a melhor coisa que a aconteceu na minha vida, é impossível te comparar com qualquer outra coisa, quando estou com você eu sou o homem mais feliz do mundo, não poderia pedir nada mais do que isso, e então, eu falo novamente. </p>
+                <brk>
+                <p> Ana Carolina Martins da Silva, eu te amo mais que tudo que já amei, Feliz Aniversário meu amor ❤️ </p>
+        </div>
+        
+        <!-- Cronômetro -->
+        <div class="timer">
+            <h1>Hoje estamos juntos há </h1>
+            <div><span id="years">0</span> <h2>Anos</h2></div>
+            <div><span id="months">0</span> <h2>Meses</h2></div>
+            <div><span id="days">0</span> <h2>Dias</h2></div>
+            <div><span id="hours">0</span> <h2>Horas</h2></div>
+            <div><span id="minutes">0</span> <h2>Minutos</h2></div>
+            <div><span id="seconds">0</span> <h2>Segundos</h2></div>
+        </div>
+    </div>
+</body>
+
+<div class="music-player">
+    <audio id="audio-player" loop>
+        <source src="music/music1.mp3" type="audio/mpeg">
+        
+    </audio>
+    <button onclick="document.getElementById('audio-player').play()">
+        <i class="fas fa-play"></i>
+    </button>
+    <button onclick="document.getElementById('audio-player').pause()">
+        <i class="fas fa-pause"></i>
+    </button>
+</div>
+
+<script>
+    window.onload = function() {
+        document.getElementById('audio-player').play();
+    }
+</script>
+
+
+</html>

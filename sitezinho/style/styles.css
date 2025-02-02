@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right,rgb(182, 120, 122), #fad0c4);
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+}
+
+.message {
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.message p
+{
+  font-size: 1em;
+  color: black; 
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 2em;
+  margin-top: 20px;
+}
+.timer h1 {
+  font-size: 1.5em; 
+}
+
+.timer h2 {
+  font-size: 0.5em; 
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.timer div {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(255, 0, 150, 0.5));
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(255, 0, 150, 0.8);
+  min-width: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.timer span {
+  font-weight: bold;
+  display: block;
+}
+
+.music-player {
+  margin-top: 20px;
+}
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.music-player button {
+  background-color:rgb(207, 32, 40); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.music-player button i {
+  margin-right: 8px;
+}
