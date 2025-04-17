@@ -49,20 +49,11 @@ h1 {
   font-size: 1em;
   color: black; 
 }
-.timer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  font-size: 2em;
-  margin-top: 20px;
-}
-.timer h1 {
-  font-size: 1.5em; 
-}
 
-.timer h2 {
-  font-size: 0.5em; 
+.timer-title {
+  font-size: 1.5em;
+  margin-top: 30px;
+  font-weight: bold;
 }
 
 @keyframes pulse {
@@ -71,15 +62,34 @@ h1 {
   100% { transform: scale(1); }
 }
 
+.timer-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.timer-wrapper h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .timer div {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(255, 0, 150, 0.5));
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 0, 150, 0.8);
   min-width: 120px;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,6 +97,7 @@ h1 {
 }
 
 .timer span {
+  font-size: 2.5em;
   font-weight: bold;
   display: block;
 }
@@ -118,4 +129,88 @@ h1 {
 
 .music-player button i {
   margin-right: 8px;
+}
+
+
+/* Timeline */
+.timeline {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.event {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+
+.event .date {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.event .icon {
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+/* Recado animado */
+.recado {
+  margin: 40px auto;
+  max-width: 600px;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 150, 0.4);
+}
+
+/* Viagens */
+.viagens {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
+}
+
+.viagens h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.viagem-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+}
+
+.viagem-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.viagem-card p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* Typewriter */
+#typewriter {
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
